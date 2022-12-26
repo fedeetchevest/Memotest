@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestika</title>
+    <link rel="stylesheet" href="./CSS/pratica.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); </style>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contadores">
+            <div class="contador-item">
+                <h4 class="cabecera-titulo">Movimientos</h4>
+                <div>
+                    <span id="mov">00</span>/<span id="mov-total">20</span>
+                </div>
+            </div>
+            <div>
+                <!--<h4 class="cabecera-titulo">Tiempo</h4>
+                <div>
+                    <span id="minutos">00</span>:<span id="segundos">00</span>
+                </div> -->
+                <h4>Nivel</h4>
+                <div><span id="nivel">01</span></div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="principal">
+        <div class="principal" id="mesa">
+            <div class="tarjeta">
+                <div class="tarjeta_contenido"></div>            
+            </div>           
+        </div>
+
+
+        <div id="feedback" class="no-visible">
+            <div class="feedback">
+                <h2 class="titulo-feedback">¡Buen Trabajo!</h2>
+                <button id="subir" class="boton-reiniciar">Siguiente Nivel</button>
+                <button id="reiniciar" class="boton-reiniciar">¿Reiniciar el juego?</button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./JS/variables-globales.js"></script>
+    <script src="./JS/baraja-reparte.js"></script>
+    <script src="./JS/descubrir-comparar.js"></script>
+    <script src="./JS/acierto-error.js"></script>
+    <script src="./JS/contador.js"></script>
+    <script src="./JS/iniciar.js"></script>
+    
+
+</body>
+</html>
