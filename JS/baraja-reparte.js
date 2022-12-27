@@ -1,5 +1,7 @@
-function barajaTarjetas(){
+function barajaTarjetas(lasTarjetas){
     let resultado;
+
+    let totalTarjetas = lasTarjetas.concat(lasTarjetas);
 
     resultado = totalTarjetas.sort(
         function(){
@@ -9,10 +11,10 @@ function barajaTarjetas(){
     return resultado;
 }
 
-function reparteTarjetas(){
+function reparteTarjetas(lasTarjetas){
 
     let mesa = document.querySelector("#mesa");
-    let tarjetasBarajadas = barajaTarjetas()
+    let tarjetasBarajadas = barajaTarjetas(lasTarjetas)
     mesa.innerHTML= "";
 
     tarjetasBarajadas.forEach(

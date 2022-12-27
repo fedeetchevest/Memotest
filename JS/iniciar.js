@@ -1,7 +1,7 @@
 function iniciar(){
     movimientos = 0;
 
-    reparteTarjetas();
+    reparteTarjetas(niveles[nivelActual].tarjetas);
 
     document.querySelectorAll(".tarjeta").forEach(function(elemento){
     elemento.addEventListener("click", descubrir);
@@ -17,5 +17,16 @@ function iniciar(){
 
 }
 
+function reiniciar(){
+    nivelActual = 0;
+    actualizaNivel();
+    iniciar();
+    document.querySelector("#endGame").classList.remove("visible")
+}
+
 iniciar();
-document.querySelector("#reiniciar").addEventListener("click", iniciar);
+document.querySelectorAll(".boton-reiniciar").forEach(function (elemento){
+    elemento.addEventListener("click", reiniciar);
+})
+
+document.querySelector("#subir").addEventListener("click",cargaNuevoNivel);

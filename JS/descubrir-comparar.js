@@ -19,11 +19,7 @@ function descubrir(){
     tarjetasPendientes = document.querySelectorAll(".tarjeta:not(.acertada)")
 
     if (tarjetasPendientes.length === 0){
-        setTimeout(
-            function finalizar(){
-                document.querySelector("#feedback").classList.add("visible");
-                document.querySelector("#mesa").classList.add("no-visible")
-            },1000);
+        setTimeout(finalizar,1000);
     }
 }
 

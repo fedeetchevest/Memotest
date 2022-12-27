@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domestika</title>
+    <title>Memotest</title>
     <link rel="stylesheet" href="./CSS/pratica.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); </style>
 </head>
@@ -36,12 +36,26 @@
             </div>           
         </div>
 
+        <div id="endGame" class="no-visible">
+            <div class="feedback">
+                <h2>Superaste todos los niveles! 🏆</h2>
+                <button class="boton-reiniciar">¿Reiniciar el juego?</button>
+            </div>
+        </div>
+
+        <div id="gameOver" class="no-visible">
+            <div class="feedback">
+                <h2>Oh no! Te quedaste sin Movimientos 😭</h2>
+                <button class="boton-reiniciar">¿Reiniciar el juego?</button>
+            </div>
+
+        </div>
 
         <div id="feedback" class="no-visible">
             <div class="feedback">
                 <h2 class="titulo-feedback">¡Buen Trabajo!</h2>
-                <button id="subir" class="boton-reiniciar">Siguiente Nivel</button>
-                <button id="reiniciar" class="boton-reiniciar">¿Reiniciar el juego?</button>
+                <button id="subir" class="boton-nivel">Siguiente Nivel</button>
+                <button class="boton-reiniciar">¿Reiniciar el juego?</button>
             </div>
         </div>
         
@@ -51,6 +65,8 @@
     <script src="./JS/descubrir-comparar.js"></script>
     <script src="./JS/acierto-error.js"></script>
     <script src="./JS/contador.js"></script>
+    <script src="./JS/cambia-nivel.js"></script>
+    <script src="./JS/finalizar.js"></script>
     <script src="./JS/iniciar.js"></script>
     
 
