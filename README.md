@@ -5,6 +5,6 @@
 ### Debajo encontraras el juego en Vercel y mi perfil de Linkedin. Saludos! 👋
 
 ## 🔗 Links
-[![Vercel ](https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+[![Vercel ](https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://memotest-seven.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/federico-etchevest-985962160/)
 
