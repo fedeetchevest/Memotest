@@ -3,7 +3,8 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #00B4DB, #0083B0);
+    height: 99vh;    
 }
 
 main{
@@ -11,16 +12,58 @@ main{
     display: flex;
     justify-content: center;
     position: relative;
+    width: 60%;
+    height: 70vh;
 }
+
+.pantalla-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; 
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+    width: 65%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.boton-comenzar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(236, 129, 22);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.boton-comenzar:hover{
+    animation: boton-hover 0.5s;
+}
+
+.contador-item{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;  
+}
+
 .principal{
-    min-height: 350px;
-    max-width: 42rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     margin: auto;
-    background-color: #636363;
     border-radius: 25px;
 }
 
@@ -29,8 +72,8 @@ main{
     height: 6rem;
     margin: 0.5rem;
     border-radius: 0.3em;
-    background-color: rgb(251, 255, 34);
-    box-shadow: 1px 1px 3 px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     position: relative;
     transition: 0.3s;
     cursor: pointer;
@@ -198,4 +241,28 @@ main{
 .titulo-feedback{
     color: white;
     margin: 25px;
+}
+
+.mesa-principal{
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.footer{
+    position: relative;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-style: italic;
+    margin-top: 15px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

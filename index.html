@@ -9,7 +9,17 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); </style>
 </head>
 <body>
-    <header class="cabecera">
+    <div>
+        <div class="pantalla-inicio" id="pantalla-inicio">
+            <div class="inicio">
+                <h1>⭐⭐MEMOTEST⭐⭐</h1>
+                <p>Created by: Federico Etchevest 😎</p>
+                <button class="boton-comenzar" id="boton-comenzar">Comenzar!</button>
+            </div>
+            
+        </div>
+    </div>
+    <header class="no-visible" id="header">
         <div class="contadores">
             <div class="contador-item">
                 <h4 class="cabecera-titulo">Movimientos</h4>
@@ -17,7 +27,7 @@
                     <span id="mov">00</span>/<span id="mov-total">20</span>
                 </div>
             </div>
-            <div>
+            <div class="contador-item">
                 <!--<h4 class="cabecera-titulo">Tiempo</h4>
                 <div>
                     <span id="minutos">00</span>:<span id="segundos">00</span>
@@ -29,7 +39,7 @@
         </div>
     </header>
 
-    <main class="principal">
+    <main class="no-visible" id="main">
         <div class="principal" id="mesa">
             <div class="tarjeta">
                 <div class="tarjeta_contenido"></div>            
@@ -60,7 +70,13 @@
         </div>
         
     </main>
+
+    <footer class="no-visible" id="footer">
+        <p>Derechos reservados - Federico Etchevest 2022</p>
+    </footer>
+    
     <script src="./JS/variables-globales.js"></script>
+    <script src="./JS/comenzar.js"></script>
     <script src="./JS/baraja-reparte.js"></script>
     <script src="./JS/descubrir-comparar.js"></script>
     <script src="./JS/acierto-error.js"></script>
