@@ -77,7 +77,7 @@ main{
 }
 
 .boton-comenzar:hover::after {
-	transform: scale(400);
+	transform: scale(1000);
 	background: #12cb37;
 }
 
