@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memotest</title>
-    <link rel="stylesheet" href="./CSS/pratica.css">
+    <link rel="stylesheet" href="./CSS/memotest.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); </style>
 </head>
 <body>
@@ -14,7 +14,7 @@
             <div class="inicio">
                 <h1>⭐⭐MEMOTEST⭐⭐</h1>
                 <p>Created by: Federico Etchevest 😎</p>
-                <button class="boton-comenzar" id="boton-comenzar">Comenzar!</button>
+                <button class="boton-comenzar" id="boton-comenzar"><span>Comenzar!</span></button>
             </div>
             
         </div>
@@ -24,7 +24,7 @@
             <div class="contador-item">
                 <h4 class="cabecera-titulo">Movimientos</h4>
                 <div>
-                    <span id="mov">00</span>/<span id="mov-total">20</span>
+                    <span id="mov">00</span>/<span id="mov-total">30</span>
                 </div>
             </div>
             <div class="contador-item">
@@ -40,33 +40,15 @@
     </header>
 
     <main class="no-visible" id="main">
+
         <div class="principal" id="mesa">
             <div class="tarjeta">
                 <div class="tarjeta_contenido"></div>            
             </div>           
         </div>
-
-        <div id="endGame" class="no-visible">
-            <div class="feedback">
-                <h2>Superaste todos los niveles! 🏆</h2>
-                <button class="boton-reiniciar">¿Reiniciar el juego?</button>
-            </div>
-        </div>
-
-        <div id="gameOver" class="no-visible">
-            <div class="feedback">
-                <h2>Oh no! Te quedaste sin Movimientos 😭</h2>
-                <button class="boton-reiniciar">¿Reiniciar el juego?</button>
-            </div>
-
-        </div>
-
+        
         <div id="feedback" class="no-visible">
-            <div class="feedback">
-                <h2 class="titulo-feedback">¡Buen Trabajo!</h2>
-                <button id="subir" class="boton-nivel">Siguiente Nivel</button>
-                <button class="boton-reiniciar">¿Reiniciar el juego?</button>
-            </div>
+            
         </div>
         
     </main>
@@ -84,6 +66,8 @@
     <script src="./JS/cambia-nivel.js"></script>
     <script src="./JS/finalizar.js"></script>
     <script src="./JS/iniciar.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/sweetAlert.js"></script>
     
 
 </body>

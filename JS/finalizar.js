@@ -1,10 +1,21 @@
 function finalizar(){
     if(nivelActual < niveles.length - 1){
-        document.querySelector("#feedback").classList.add("visible");
-        document.querySelector("#mesa").classList.add("no-visible")
+        pasaNivel();
+        
     }else{
-        document.querySelector("#endGame").classList.add("visible");
-        document.querySelector("#mesa").classList.add("no-visible");
+        finalJuego();
     }
     
+}
+
+function perder (){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oh no! Te quedaste sin Movimientos 😭',
+        confirmButtonText: 'Reiniciar Juego 🔁',
+      }).then((result) => {
+        if (result.isConfirmed) {
+            reiniciar();
+        }
+      })
 }

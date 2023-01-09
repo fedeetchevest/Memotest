@@ -22,6 +22,8 @@ function reiniciar(){
     actualizaNivel();
     iniciar();
     document.querySelector("#endGame").classList.remove("visible")
+    document.querySelector("#gameOver").classList.remove("visible")
+
 }
 
 iniciar();
