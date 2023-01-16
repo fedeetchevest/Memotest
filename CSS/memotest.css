@@ -279,7 +279,9 @@ main{
 }
 
 .footer{
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
