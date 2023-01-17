@@ -11,7 +11,7 @@
 }
 @keyframes fondo{
     0%{
-        background-size: 2000px 800px;
+        background-size: 2000px 890px;
     }
     100%{background-size: 3000px 1000px;}
 }
@@ -27,7 +27,7 @@ main{
     height: 400px;
 }
 
-.texto-inicio{
+.titulo-inicio{
     font-size: 80px;
     font-weight: bold;
     background: linear-gradient(#1497be, #1c2aec);
@@ -292,3 +292,41 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 500px){
+    .inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        height: 500px;
+        width: 350px;
+    }
+
+    .titulo-inicio{
+        font-size: 40px;
+    }
+
+    .texto-inicio{
+        font-size: 22px;
+        display: flex;
+    }
+
+    .contadores{
+        font-size: 20px;
+    }
+
+    .mesa-principal{
+        padding-left: 35px;
+        width: 340px;
+        height: 600px;
+    }
+
+    .tarjeta{
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
