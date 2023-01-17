@@ -328,10 +328,39 @@ main{
         height: 4rem;
     }
 
-    .footer{
-        position: absolute;
-        bottom: 0;
-    }
-
 }
 
+@media (max-width: 800px){
+    .inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        height: 500px;
+        width: 480px;
+    }
+
+    .titulo-inicio{
+        font-size: 40px;
+    }
+
+    .texto-inicio{
+        font-size: 22px;
+        display: flex;
+    }
+
+    .contadores{
+        font-size: 20px;
+    }
+
+    .mesa-principal{
+        padding-left: 35px;
+        width: 480px;
+        height: 600px;
+    }
+
+    .tarjeta{
+        width: 5rem;
+        height: 5rem;
+    }
+}
